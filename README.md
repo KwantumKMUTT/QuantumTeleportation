@@ -1,4 +1,4 @@
-#Quantum Teleportation in Python with Qiskit
+# Quantum Teleportation in Python with Qiskit
 
 This project demonstrates the quantum teleportation protocol using the Qiskit framework. It provides a step-by-step implementation and verification of teleporting a quantum state, specifically the superposition states |+⟩ and |-⟩.
 
