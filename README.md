@@ -61,37 +61,3 @@ The notebook carries out four experiments to comprehensively verify the quantum 
 4.  **Teleporting |-⟩ and measuring in the X-basis:** This should result in measuring |-⟩ (which corresponds to an outcome of '1' in the X-basis) with 100% probability. This is a crucial test to ensure that the relative phase of the superposition was preserved during teleportation.
 
 The results of these experiments, as shown in the notebook, confirm the successful teleportation of the quantum states with high fidelity, demonstrating that the phase information, a key component of quantum states, is correctly transmitted.
-
-## Example Circuit
-
-Here is an example of the quantum circuit used for teleporting the |+⟩ state with a measurement in the X-basis:
-code
-Code
-download
-content_copy
-expand_less
-┌───┐ Alice's |+⟩            Bell Pair      ┌───┐┌─┐ Alice Measures      »
-
-q_0: ┤ H ├──────░─────────────────────░───────■──┤ H ├┤M├───────░─────────────»
-└───┘ ░ ┌───┐ ░ ┌─┴─┐└┬─┬┘└╥┘ ░ »
-q_1: ───────────░──────┤ H ├──■───────░─────┤ X ├─┤M├──╫────────░──────────■──»
-░ └───┘┌─┴─┐ ░ └───┘ └╥┘ ║ ░ ┌─┴─┐»
-q_2: ───────────░───────────┤ X ├─────░────────────╫───╫────────░────────┤ X ├»
-░ └───┘ ░ ║ ║ ░ └───┘»
-c: 3/══════════════════════════════════════════════╩═══╩══════════════════════»
-1 0 »
-« X-basis measure
-«q_0: ─■──────────────░───────────
-« │ ░
-«q_1: ─┼──────────────░───────────
-« │ ┌───┐ ░ ┌─┐
-«q_2: ─■─┤ H ├────────░────────┤M├
-« └───┘ ░ └╥┘
-«c: 3/══════════════════════════╩═
-« 2```
-
-Google Search Suggestions
-Display of Search Suggestions is required when using Grounding with Google Search. Learn more
-make readme for github from jupyter notebook
-automatically generate readme from python script
-jupyter notebook to markdown github
